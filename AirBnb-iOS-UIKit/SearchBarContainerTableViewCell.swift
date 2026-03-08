@@ -9,9 +9,14 @@ import UIKit
 
 class SearchBarContainerTableViewCell: UITableViewCell {
 
+    // MARK: - IBOUTLETS
+    @IBOutlet weak var searchBarView: UIView!
+    
     // MARK: - LIFECYCLE METHODS
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        searchBarView.layer.cornerRadius = 43
     }
 
     override func setSelected(
