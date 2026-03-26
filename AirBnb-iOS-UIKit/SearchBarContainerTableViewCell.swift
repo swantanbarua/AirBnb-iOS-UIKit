@@ -17,6 +17,8 @@ class SearchBarContainerTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         searchBarView.layer.cornerRadius = 43
+        searchBarView.layer.borderWidth = 0.5
+        searchBarView.layer.borderColor = UIColor.gray.cgColor
     }
 
     override func setSelected(
