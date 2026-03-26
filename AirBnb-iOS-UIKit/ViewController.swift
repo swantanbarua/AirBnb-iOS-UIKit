@@ -18,6 +18,14 @@ class ViewController: UIViewController {
         
         exploreTableView.delegate = self
         exploreTableView.dataSource = self
+        
+        exploreTableView.register(
+            UINib(
+                nibName: "SearchBarContainerTableViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "SearchBarContainerTableViewCell"
+        )
     }
 }
 
